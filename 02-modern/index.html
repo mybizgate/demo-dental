@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f8ff">
+  <meta name="description" content="Dental Clinic — the friendly dental clinic in Kuala Lumpur for kids, teens, parents and grandparents. Prices shown, next free slot shown, nervous-patient mode, and bookings in one WhatsApp message.">
+  <meta name="author" content="Niagova">
+  <title>Dental Clinic | The dentist your kids ask to go back to</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=__BUILD_VERSION__">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Dental Clinic home">
+        <span class="brand-tooth" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 5c-5 0-9 3-9 8 0 8 3 22 7 22 2 0 1-8 2-8s0 8 2 8c4 0 7-14 7-22 0-5-4-8-9-8z" fill="#fff"/><circle cx="16" cy="16" r="1.6" fill="#14213d"/><circle cx="24" cy="16" r="1.6" fill="#14213d"/><path d="M16 21c2 2 6 2 8 0" stroke="#14213d" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>
+        <span class="brand-name">Dental Clinic<small>Family Dental · KL</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#kids">For kids</a>
+        <a href="#prices">Prices</a>
+        <a href="#slots">Next free slot</a>
+        <a href="#ask">Ask the clinic</a>
+        <a href="#team">Team</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="mode-toggle" type="button" id="nervousToggle" aria-pressed="false"><span class="dot"></span>I'm nervous</button>
+        <a class="button button-ink" href="#book">Book</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-chips"><span class="chip chip-yellow">No scary stuff</span><span class="chip chip-mint" id="heroSlotChip">Next slot: checking…</span></p>
+          <h1>The dentist your kids <span class="wiggle">ask</span> to go back to.</h1>
+          <p class="lead">Check-ups that end with a high-five, prices you can see before you come, and the next free slot right here. No "how much?" messages. No surprises. No tears, mostly.</p>
+          <div class="hero-actions">
+            <a class="button button-ink" href="#book">Book in 3 taps</a>
+            <a class="button button-outline" href="#kids">See a kid's check-up</a>
+          </div>
+          <ul class="trust">
+            <li><strong>4.9★</strong><span>illustrative rating</span></li>
+            <li><strong>Age 1–99</strong><span>everyone welcome</span></li>
+            <li><strong>RM 60</strong><span>kids check-up, listed</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="images/mod-hero-kid.webp" alt="A laughing boy in a paper tooth crown giving a thumbs-up in the dental chair while a dentist holds up star stickers" fetchpriority="high"></div>
+          <div class="sticker sticker-one reveal"><span>⭐</span><div><strong>Brave Patient</strong><span>certificate after every visit</span></div></div>
+          <div class="sticker sticker-two reveal"><span>💬</span><div><strong>0 messages</strong><span>needed to find the price</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NERVOUS PANEL (shown when toggle on) -->
+    <section class="calm" id="calm" hidden>
+      <div class="wrap calm-grid">
+        <div>
+          <p class="eyebrow">Nervous mode is on</p>
+          <h2>Okay. Here's how we make this easy.</h2>
+          <p>You told us you're nervous, so the site is now calmer, and your booking will ask for the gentle-care slot automatically. Nothing happens in the chair without you saying yes first.</p>
+        </div>
+        <ul class="calm-list">
+          <li><span>✋</span><strong>Raise a hand, we stop.</strong> Every time. No explanation needed.</li>
+          <li><span>🗣️</span><strong>Talk first, look second.</strong> Your first visit can be a chat in the lounge, no chair at all.</li>
+          <li><span>🧴</span><strong>Numbing gel before any needle.</strong> Pressure, not pinch.</li>
+          <li><span>🎧</span><strong>Headphones and a ceiling screen.</strong> Pick the show, forget the room.</li>
+          <li><span>👩‍⚕️</span><strong>Same dentist, every visit.</strong> Dr. Aina specialises in anxious adults.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KIDS STORYBOARD -->
+    <section class="kids" id="kids">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">For kids (and nervous grown-ups)</p><h2>What actually happens at a check-up</h2></div>
+          <p class="lead">Tap through the story with your child before you come. Knowing what's next is half the bravery.</p>
+        </div>
+        <div class="story reveal" id="story">
+          <div class="story-stage" id="storyStage"></div>
+          <div class="story-nav"><button type="button" id="storyPrev" aria-label="Previous step">←</button><div class="story-dots" id="storyDots"></div><button type="button" id="storyNext" aria-label="Next step">→</button></div>
+        </div>
+        <div class="kids-promises reveal">
+          <div><span>🪑</span><strong>Ride the chair first</strong><p>Up, down, lights on, lights off. Their call.</p></div>
+          <div><span>🦷</span><strong>Mr. Molar explains</strong><p>Our tooth puppet shows every tool before we use it.</p></div>
+          <div><span>🏅</span><strong>Everyone leaves a winner</strong><p>Sticker, certificate, photo for the fridge.</p></div>
+          <div><span>👨‍👩‍👧</span><strong>Parents in the room</strong><p>Always. Hold a hand or hold a phone, whichever helps.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="prices" id="prices">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Prices, out loud</p><h2>What it costs, before you ask</h2></div>
+          <div class="toggle" role="group" aria-label="Price list for"><button type="button" class="active" data-list="adults">Adults</button><button type="button" data-list="kids">Kids &amp; teens</button></div>
+        </div>
+        <div class="price-grid reveal" id="priceGrid"></div>
+        <div class="panel-row reveal">
+          <strong>We take</strong>
+          <div class="chips"><span>AIA</span><span>Prudential</span><span>Great Eastern</span><span>Allianz</span><span>Etiqa</span><span>Corporate panels</span><span>DuitNow / cards</span><span>0% instalments</span></div>
+          <p class="fine-print">Illustrative proposal prices in RM. Replace with the clinic's confirmed list and panels before launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT FREE SLOT -->
+    <section class="slots" id="slots">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Next free slot</p><h2>Who's free, and when</h2></div>
+          <p class="lead">Every dentist's next open chair, live. Tap a time and it goes straight into your booking.</p>
+        </div>
+        <div class="dentist-cards reveal" id="dentistCards"></div>
+        <div class="week-board reveal">
+          <div class="week-head"><strong id="weekTitle">This week</strong><div class="day-pills" id="dayPills" role="tablist" aria-label="Choose a day"></div></div>
+          <div class="week-slots" id="weekSlots"></div>
+          <p class="fine-print">Demo schedule generated in your browser. In production this reads the clinic's appointment book.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASK THE CLINIC -->
+    <section class="ask" id="ask">
+      <div class="wrap ask-grid">
+        <div class="ask-copy reveal">
+          <p class="eyebrow">Ask the clinic</p>
+          <h2>The questions you'd WhatsApp us, answered in a second</h2>
+          <p>Prices, panels, braces, pain, kids, pregnancy, parking. It searches the clinic's own answers. Only the rare question reaches a human.</p>
+          <div class="suggest" id="askSuggest">
+            <button type="button" data-q="braces price">Braces price?</button>
+            <button type="button" data-q="panel insurance">My insurance panel?</button>
+            <button type="button" data-q="first visit kid age">First visit age?</button>
+            <button type="button" data-q="toothache">Toothache now</button>
+            <button type="button" data-q="pregnant">Pregnant, safe?</button>
+          </div>
+        </div>
+        <div class="ask-panel reveal">
+          <form class="ask-form" id="askForm" role="search"><span aria-hidden="true">🦷</span><input id="askInput" type="search" placeholder="Ask about a price, a treatment or a worry…" autocomplete="off" aria-label="Ask the clinic"><button class="button button-ink" type="submit">Ask</button></form>
+          <div class="ask-results" id="askResults" aria-live="polite"><div class="ask-empty"><span>💭</span><p>Try "scaling price", "do you do root canal" or "parking".</p></div></div>
+          <p class="ask-fallback">Still stuck? <a href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20quick%20question%3A%20" target="_blank" rel="noopener">WhatsApp a human</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" aria-label="Around the clinic">
+      <div class="wrap section-head reveal"><div><p class="eyebrow">Around the clinic</p><h2>Proof it's not scary</h2></div></div>
+      <div class="strip reveal">
+        <figure><img src="images/mod-family-lounge.webp" alt="A family relaxing in the colourful waiting area while children play at a mint table" loading="lazy"><figcaption>The lounge has a play corner</figcaption></figure>
+        <figure><img src="images/mod-teen-braces.webp" alt="A teenager smiling with colourful braces while a dentist gives a thumbs-up" loading="lazy"><figcaption>Braces with colour of the month</figcaption></figure>
+        <figure><img src="images/clinic-hero-generations-v4.webp" alt="A grandfather, a boy and a dentist laughing over a tooth model" loading="lazy"><figcaption>Grandpa and grandson, same slot</figcaption></figure>
+        <figure><img src="images/mod-senior-smile.webp" alt="A grandmother laughing with a dentist showing her a smile scan on a tablet" loading="lazy"><figcaption>Smile scans on screen</figcaption></figure>
+        <figure><img src="images/dental-family-v2.webp" alt="A dentist showing a tooth model to a girl and her mother" loading="lazy"><figcaption>Mr. Molar explains everything</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <div class="wrap team-grid">
+        <figure class="team-photo reveal"><img src="images/mod-team-fun.webp" alt="Three laughing clinic staff in blue, coral and mint scrubs holding a giant toothbrush and a tooth mascot" loading="lazy"></figure>
+        <div class="team-copy reveal">
+          <p class="eyebrow">The team</p>
+          <h2>Dentists who remember your kid's favourite dinosaur</h2>
+          <p>Nobody here lectures. We have all had a filling, we all know the feeling, and we all think a clinic should be the least scary building on the street.</p>
+          <ul class="team-list">
+            <li><span class="avatar a-blue">AZ</span><div><strong>Dr. Aina Zulkifli</strong><span>Principal · anxious adults &amp; seniors</span><em>Fun fact: cries at Pixar films. Every time.</em></div></li>
+            <li><span class="avatar a-coral">RK</span><div><strong>Dr. Ravi Kumar</strong><span>Kids &amp; teens · braces</span><em>Fun fact: knows 40 dinosaurs by name. Tested weekly.</em></div></li>
+            <li><span class="avatar a-mint">NH</span><div><strong>Nurse Nadia Hashim</strong><span>Head nurse · sticker keeper</span><em>Fun fact: has never run out of stickers. Not once.</em></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <div class="section-head reveal"><div><p class="eyebrow">Parents say</p><h2>"He asked if we could come back tomorrow"</h2></div><div class="rating-tile"><strong>4.9</strong><div><span class="stars">★★★★★</span><small>Illustrative · connect Google reviews</small></div></div></div>
+        <div class="review-grid reveal">
+          <article class="review"><span class="stars">★★★★★</span><p>"My daughter screamed at two other clinics. Here she rode the chair, counted teeth with Mr. Molar and walked out with a certificate. I nearly cried."</p><footer><span class="avatar a-blue">SF</span>Siti F. · mum of two</footer></article>
+          <article class="review"><span class="stars">★★★★★</span><p>"Saw the price list online, picked the Saturday 10 am slot, one WhatsApp. Done. First time I haven't had to ask 'berapa?'."</p><footer><span class="avatar a-coral">DL</span>Daniel L. · dad</footer></article>
+          <article class="review"><span class="stars">★★★★★</span><p>"I'm 64 and terrified of dentists. Turned on nervous mode, got Dr. Aina, and she talked me through every second. No pain."</p><footer><span class="avatar a-mint">RA</span>Rosnah A. · grandmother</footer></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+      <div class="wrap book-grid">
+        <div class="book-copy reveal">
+          <p class="eyebrow">Book in 3 taps</p>
+          <h2>Pick, tap, send. We reply "confirmed".</h2>
+          <p>We write the WhatsApp message for you with the price and slot already in it. You just press send.</p>
+          <div class="summary" id="summary">
+            <div><span>Treatment</span><strong id="sumService">Not chosen</strong></div>
+            <div><span>Dentist</span><strong id="sumDentist">Any</strong></div>
+            <div><span>When</span><strong id="sumWhen">Pick a slot</strong></div>
+            <div><span>Price</span><strong id="sumPrice">—</strong></div>
+          </div>
+          <div class="cert-preview reveal" id="certPreview" hidden>
+            <p class="eyebrow">Sneak peek: the certificate</p>
+            <div class="cert"><span class="cert-star">⭐</span><strong>Brave Patient Award</strong><em id="certName">Your name here</em><span>Dental Clinic</span></div>
+          </div>
+        </div>
+        <form class="book-form reveal" id="bookForm" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="name">Patient name</label><input id="name" name="name" required autocomplete="name" placeholder="Who's coming?"></div>
+            <div class="field"><label for="phone">WhatsApp number</label><input id="phone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="01x-xxx xxxx"></div>
+            <div class="field"><label for="age">Patient is</label><select id="age" name="age"><option>An adult</option><option>A child (under 12)</option><option>A teen</option><option>A senior</option></select></div>
+            <div class="field"><label for="dentist">Dentist</label><select id="dentist" name="dentist"><option>Any dentist</option></select></div>
+            <div class="field full"><label for="service">Treatment</label><select id="service" name="service" required><option value="">Choose one</option></select></div>
+            <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+            <div class="field"><label for="time">Time</label><select id="time" name="time" required><option value="">Choose a time</option></select></div>
+            <div class="field full check"><input id="gentle" name="gentle" type="checkbox" value="yes"><label for="gentle">Gentle-care slot please (nervous patient, extra time, same dentist)</label></div>
+            <div class="field full"><label for="notes">Anything we should know</label><textarea id="notes" name="notes" placeholder="Pain, allergies, medication, insurance panel, your kid's favourite dinosaur…"></textarea></div>
+          </div>
+          <div class="form-actions"><button class="button button-yellow" type="submit">Send on WhatsApp</button><button class="button button-outline" type="button" id="copyMessage">Copy message</button></div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Visit</p>
+          <h2>Kampung Pandan, ground floor, big yellow door</h2>
+          <address>Dental Clinic, Kampung Pandan<br>55100 Kuala Lumpur</address>
+          <dl class="hours"><div><dt>Mon – Fri</dt><dd>9:00 AM – 7:00 PM</dd></div><div><dt>Saturday</dt><dd>9:00 AM – 5:00 PM</dd></div><div><dt>Sunday</dt><dd>Closed · emergencies on WhatsApp</dd></div></dl>
+          <p class="open-now chip chip-mint" id="openNow"></p>
+          <p class="visit-note">Pram-friendly, play corner, nappy change, prayer room, free parking at the back.</p>
+          <div class="hero-actions"><a class="button button-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=3.144827966176431%2C101.74171596840188" target="_blank" rel="noopener">Directions</a><a class="button button-outline" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%27d%20like%20to%20book." target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+        <div class="visit-map reveal"><iframe title="Map to Dental Clinic in Kampung Pandan, Kuala Lumpur" src="https://www.google.com/maps?q=3.144827966176431,101.74171596840188&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </section>
+
+    <!-- PITCH -->
+    <section class="pitch" id="for-clinic-owners" aria-labelledby="pitch-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">For the clinic owner · website by Niagova</p><h2 id="pitch-title">Watch the website answer your WhatsApp for you</h2></div>
+          <p class="lead">This is what a Saturday morning looks like for a clinic receptionist. The left phone is today. The right phone is with this web system.</p>
+        </div>
+        <div class="phones reveal">
+          <div class="phone"><div class="phone-head">Replying by hand</div><div class="phone-screen" id="phoneManual"></div><div class="phone-foot"><strong id="manualCount">0</strong> messages typed by a human</div></div>
+          <div class="phone phone-good"><div class="phone-head">With this website</div><div class="phone-screen" id="phoneAuto"></div><div class="phone-foot"><strong id="autoCount">0</strong> answered by the site · <strong id="humanCount">0</strong> for a human</div></div>
+        </div>
+        <div class="compare reveal">
+          <div class="compare-col before"><h3>Replying by hand</h3><ul><li>Price list as a blurry photo, out of date next month.</li><li>"Got slot Saturday?" means opening the book, replying, chasing.</li><li>Anxious patients never ask. They just never come.</li><li>Parents ask "is it scary for kids?" and get one line back.</li></ul></div>
+          <div class="compare-col after"><h3>With this web system</h3><ul><li>Prices, panels and next free slots published once.</li><li>Ask the clinic answers policy questions instantly, 24/7.</li><li>Nervous mode and the kids' storyboard convert the people who were too scared to message.</li><li>Bookings arrive complete: patient, treatment, dentist, slot, price.</li></ul></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<section class="niagova-band" aria-labelledby="niagova-title">
+  <div class="niagova-band-inner">
+    <div>
+      <img src="images/niagova-logo-on-dark.svg" alt="Niagova" width="150" height="36" loading="lazy">
+      <p class="niagova-band-kicker">This demo website is built by Niagova</p>
+      <h2 id="niagova-title">Want a website like this for your business?</h2>
+      <p class="niagova-band-copy">Websites, booking systems and business apps for Malaysian SMEs. Every package and price is on niagova.com.</p>
+    </div>
+    <a class="niagova-band-cta" href="https://niagova.com/#pricing" target="_blank" rel="noopener">View Niagova packages <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+  <footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Dental Clinic · Demo website by <a href="https://niagova.com/" target="_blank" rel="noopener">Niagova</a>.</span><span>Photos, prices, reviews and schedule are illustrative proposal content.</span></div></footer>
+
+  <div class="sticky-bar"><a href="#ask">Ask the clinic</a><a class="primary" href="#book">Book now</a></div>
+  <a class="wa-float" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%27d%20like%20to%20book." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.6 11.4 11.4 0 0 0 4.4 3.9c1.6.7 2.3.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="index.js?v=__BUILD_VERSION__" defer></script>
+</body>
+</html>

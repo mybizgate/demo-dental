@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8f3">
+  <meta name="description" content="Dental Clinic — calm, premium family dentistry in Kuala Lumpur. Fees written down, chair availability online, gentle care for nervous patients and first visits for children.">
+  <meta name="author" content="Niagova">
+  <title>Dental Clinic | Dentistry that feels like a deep breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=__BUILD_VERSION__">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="notice"><span>Mon–Sat · 9:00 AM – 6:00 PM · Kampung Pandan, KL</span><span class="notice-live"><i></i>Fees and chair availability published below</span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Dental Clinic home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4c-5 0-8 3-8 8 0 7 3 24 7 24 2 0 2-9 3-9s1 9 3 9c4 0 7-17 7-24 0-5-3-8-8-8-2 0-2 1-4 1s-2-1-4-1z" fill="currentColor"/><path d="M14 10c3-3 9-3 12 0" stroke="#faf8f3" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+        <span class="brand-name">Dental Clinic<small>Kampung Pandan</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#fees">Fees</a>
+        <a href="#availability">Availability</a>
+        <a href="#comfort">Nervous?</a>
+        <a href="#kids">Little smiles</a>
+        <a href="#team">Dentists</a>
+        <a href="#urgent">Toothache now?</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button button-ink" href="#book">Book a visit</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Family dentistry · Kuala Lumpur</p>
+          <h1>Dentistry that feels like <em>a deep breath.</em></h1>
+          <p class="lead">Private suites, unhurried dentists, and every fee and open chair published right here — so you never have to message to ask "how much?" or "got slot?".</p>
+          <div class="hero-actions">
+            <a class="button button-ink" href="#fees">See fees &amp; availability</a>
+            <a class="button button-soft" href="#comfort">Nervous? Start here</a>
+          </div>
+          <ul class="hero-proof">
+            <li><strong>From RM 80</strong><span>check-up, written down</span></li>
+            <li><strong>7 days</strong><span>of chair time visible</span></li>
+            <li><strong>Age 2 to 92</strong><span>and everyone between</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img src="images/prem-hero-suite.webp" alt="A relaxed patient wearing headphones in a calm oak-and-ivory dental suite while a smiling dentist checks on her" fetchpriority="high">
+          </div>
+          <aside class="next-chair reveal" aria-live="polite">
+            <span class="pulse" aria-hidden="true"></span>
+            <div><small>Next free chair</small><strong id="nextChair">Checking…</strong></div>
+            <a href="#availability">All slots →</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="letter">
+      <div class="wrap letter-grid">
+        <figure class="letter-portrait reveal">
+          <img src="images/prem-dentist-portrait.webp" alt="Dr. Hafiz Rahman, principal dentist, smiling in a white coat" loading="lazy">
+          <figcaption><strong>Dr. Hafiz Rahman</strong><span>Principal dentist · BDS (Malaya), 16 years</span></figcaption>
+        </figure>
+        <div class="letter-copy reveal">
+          <p class="eyebrow">A note from the dentist</p>
+          <h2>You will never be told off <em>in this chair.</em></h2>
+          <p>I opened this clinic because I kept meeting adults who had not seen a dentist in ten years, not because they did not care, but because somebody once made them feel ashamed. That does not happen here.</p>
+          <p>We explain before we touch. We show you the fee before we start. If you raise your hand, we stop, no questions asked. And if your five-year-old only wants to ride the chair up and down on her first visit, that is a successful first visit.</p>
+          <p class="signature">— Dr. Hafiz, for the whole clinic team</p>
+          <ul class="promises">
+            <li>Raise a hand, we stop</li>
+            <li>Fee shown before treatment</li>
+            <li>No lectures, ever</li>
+            <li>Children set the pace</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEES -->
+    <section class="fees" id="fees">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Fees, written down</p><h2>No surprises. <em>Every fee listed.</em></h2></div>
+          <p class="lead">Tap a category to see what it costs, how long it takes and what is included. Final fees are confirmed after the dentist sees you, but they start from here.</p>
+        </div>
+        <div class="fee-groups reveal" id="feeGroups"></div>
+        <div class="panels reveal">
+          <strong>Panel &amp; payment</strong>
+          <div class="chips"><span>AIA</span><span>Prudential</span><span>Great Eastern</span><span>Allianz</span><span>Etiqa</span><span>Corporate panels</span><span>Cards &amp; e-wallets</span><span>0% instalments from RM 1,000</span></div>
+          <p>Illustrative proposal fees in RM. Replace with the studio's confirmed fee guide and panel list before launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section class="availability" id="availability">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Chair availability</p><h2>Pick a dentist, <em>pick an hour.</em></h2></div>
+          <p class="lead">Live chair time for the next seven days, by dentist. Choose a slot and it is placed straight into your booking request.</p>
+        </div>
+        <div class="board reveal">
+          <div class="dentist-tabs" id="dentistTabs" role="tablist" aria-label="Choose a dentist"></div>
+          <div class="day-strip" id="dayStrip" role="tablist" aria-label="Choose a day"></div>
+          <div class="slot-area">
+            <div class="slot-meta"><strong id="slotTitle"></strong><span class="legend"><i class="open"></i>Open <i class="limited"></i>Last one <i class="full"></i>Booked</span></div>
+            <div class="slots" id="slots"></div>
+            <p class="fine-print">Demo schedule generated in your browser. In production this reads from the clinic's appointment book.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMFORT -->
+    <section class="comfort" id="comfort">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Nervous? Start here</p><h2>Comfort is part of <em>the treatment.</em></h2></div>
+          <p class="lead">Everything below is included, not an add-on. Tell us you are nervous when you book and we reserve a longer, quieter slot.</p>
+        </div>
+        <div class="comfort-grid reveal">
+          <figure class="comfort-photo"><img src="images/prem-comfort-flatlay.webp" alt="Headphones, a warm towel, chamomile tea, a lavender eye pillow and a sticker sheet on linen" loading="lazy"></figure>
+          <ul class="comfort-list">
+            <li><span>🎧</span><div><strong>Headphones &amp; your playlist</strong><p>Noise-cancelling, with whatever you want to hear instead of us.</p></div></li>
+            <li><span>✋</span><div><strong>The hand signal</strong><p>Raise a hand and we stop immediately. Every time, for any reason.</p></div></li>
+            <li><span>🌿</span><div><strong>Numbing gel before any needle</strong><p>You feel pressure, not pinch. We wait as long as it takes.</p></div></li>
+            <li><span>📺</span><div><strong>Ceiling screen</strong><p>Your show on the ceiling. Most people forget where they are.</p></div></li>
+            <li><span>🍵</span><div><strong>Tea after, no rush</strong><p>Sit in the lounge until you are ready to go back to your day.</p></div></li>
+            <li><span>🗓️</span><div><strong>The gentle-care slot</strong><p>Tick "I'm nervous" when booking: 15 extra minutes and the same dentist every visit.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- KIDS -->
+    <section class="kids" id="kids">
+      <div class="wrap kids-grid">
+        <div class="kids-copy reveal">
+          <p class="eyebrow">Little smiles</p>
+          <h2>A first visit that ends <em>with a sticker.</em></h2>
+          <p>Under-fives get a free first look: no instruments, no lying down unless they want to. We follow the child, not the clock. Most leave asking when they can come back.</p>
+          <ol class="kid-steps">
+            <li><strong>Ride the chair</strong><span>Up, down, and up again. Their choice.</span></li>
+            <li><strong>Count the teeth</strong><span>With a mirror they hold themselves.</span></li>
+            <li><strong>Tickle brush</strong><span>Polish only if they say yes.</span></li>
+            <li><strong>Pick a sticker</strong><span>Brave Patient certificate for the fridge.</span></li>
+          </ol>
+          <a class="button button-ink" href="#book" data-select-for="My child" data-select-service="Child first visit (under 5)">Book a free first look</a>
+        </div>
+        <figure class="kids-photo reveal"><img src="images/prem-kid-first-visit.webp" alt="A dentist kneeling to high-five a laughing young girl holding a plush tooth" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Your visit, step by step</p><h2>Know what happens <em>before you arrive.</em></h2></div>
+        </div>
+        <ol class="timeline reveal">
+          <li><span>01</span><strong>Arrive, tea, five minutes</strong><p>Reception already has your request. No clipboard interrogation.</p></li>
+          <li><span>02</span><strong>We listen first</strong><p>What hurts, what worries you, what you want your smile to do.</p></li>
+          <li><span>03</span><strong>We look, and show you</strong><p>Photos on the screen so you see what we see.</p></li>
+          <li><span>04</span><strong>Plan with the fee on it</strong><p>Options, timing and exact cost, written down before anything starts.</p></li>
+          <li><span>05</span><strong>Leave with next steps</strong><p>Aftercare on WhatsApp the same evening, and a reminder when you are due.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">The dentists</p><h2>Chairside manner, <em>declared.</em></h2></div>
+          <p class="lead">Choose the dentist whose style suits you. Each one answers questions on WhatsApp before your visit.</p>
+        </div>
+        <div class="team-grid reveal">
+          <article class="dentist">
+            <img src="images/prem-dentist-portrait.webp" alt="Dr. Hafiz Rahman" loading="lazy">
+            <div class="dentist-body"><strong>Dr. Hafiz Rahman</strong><span>Principal · restorative &amp; nervous patients</span><p>"I narrate everything. You will never wonder what the next sound is."</p><div class="dentist-actions"><a class="button button-soft" href="#availability" data-select-dentist="Dr. Hafiz Rahman">See his chair</a><a class="text-link" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%20have%20a%20question%20for%20Dr.%20Hafiz%3A%20" target="_blank" rel="noopener">Ask Dr. Hafiz →</a></div></div>
+          </article>
+          <article class="dentist">
+            <img src="images/consultation.jpg" alt="Dr. Mei Lin Chong" loading="lazy">
+            <div class="dentist-body"><strong>Dr. Mei Lin Chong</strong><span>Children &amp; family dentistry</span><p>"Kids set the pace. I have done check-ups on the floor, and that counts."</p><div class="dentist-actions"><a class="button button-soft" href="#availability" data-select-dentist="Dr. Mei Lin Chong">See her chair</a><a class="text-link" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%20have%20a%20question%20for%20Dr.%20Mei%20Lin%3A%20" target="_blank" rel="noopener">Ask Dr. Mei Lin →</a></div></div>
+          </article>
+          <article class="dentist">
+            <img src="images/dental-aligner-planning-v2.webp" alt="Dr. Priya Nair" loading="lazy">
+            <div class="dentist-body"><strong>Dr. Priya Nair</strong><span>Aligners, whitening &amp; smile planning</span><p>"I show you the end result on screen before you commit to anything."</p><div class="dentist-actions"><a class="button button-soft" href="#availability" data-select-dentist="Dr. Priya Nair">See her chair</a><a class="text-link" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%20have%20a%20question%20for%20Dr.%20Priya%3A%20" target="_blank" rel="noopener">Ask Dr. Priya →</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- URGENT -->
+    <section class="urgent" id="urgent">
+      <div class="wrap urgent-grid">
+        <div class="urgent-copy reveal">
+          <p class="eyebrow">Toothache now?</p>
+          <h2>Tell us what it feels like. <em>We tell you what to do.</em></h2>
+          <p>Pick the closest match. You get first-aid steps for right now, how urgent it is, and a ready-written message so the clinic can call you back with a slot.</p>
+          <div class="symptoms" id="symptoms" role="group" aria-label="Choose a symptom"></div>
+        </div>
+        <div class="triage-card reveal" id="triageCard" aria-live="polite">
+          <div class="triage-empty"><span>🦷</span><p>Choose a symptom to see what to do now.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOUNGE + REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="wrap reviews-grid">
+        <figure class="lounge-photo reveal"><img src="images/prem-lounge.webp" alt="The studio's calm reception lounge with oak desk, boucle armchairs and a children's reading nook" loading="lazy"></figure>
+        <div class="reviews-copy reveal">
+          <p class="eyebrow">What patients say</p>
+          <h2>"I forgot to be <em>scared."</em></h2>
+          <div class="review-list">
+            <blockquote>"Ten years avoiding dentists. Dr. Hafiz talked me through every step and I actually fell asleep during the filling."<footer>Sample review · adult patient</footer></blockquote>
+            <blockquote>"My son asked if we could come back tomorrow. He got a sticker and a certificate. I got a quote before anything was done."<footer>Sample review · parent</footer></blockquote>
+            <blockquote>"Saw the fee online, picked Thursday 11 am, one WhatsApp, confirmed. Why is this not normal?"<footer>Sample review · adult patient</footer></blockquote>
+          </div>
+          <p class="fine-print">Illustrative reviews for proposal. Connect verified Google reviews before launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+      <div class="wrap book-grid">
+        <div class="book-copy reveal">
+          <p class="eyebrow">Book a visit</p>
+          <h2>One message. <em>We reply "confirmed".</em></h2>
+          <p>Everything you choose above lands here. We compose the WhatsApp message for you, with the fee and slot already in it.</p>
+          <div class="summary" id="summary">
+            <div><span>Dentist</span><strong id="sumDentist">Any dentist</strong></div>
+            <div><span>Treatment</span><strong id="sumService">Not chosen yet</strong></div>
+            <div><span>When</span><strong id="sumWhen">Pick a slot above</strong></div>
+            <div><span>From</span><strong id="sumFee">—</strong></div>
+          </div>
+          <div class="recent" id="recentWrap" hidden><p class="eyebrow">Requests saved on this device</p><ul id="recentList"></ul></div>
+        </div>
+        <form class="book-form reveal" id="bookForm" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="name">Patient name</label><input id="name" name="name" required autocomplete="name" placeholder="Who is the visit for?"></div>
+            <div class="field"><label for="phone">WhatsApp number</label><input id="phone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="01x-xxx xxxx"></div>
+            <div class="field"><label for="who">This visit is for</label><select id="who" name="who"><option>Myself</option><option>My child</option><option>My parent</option><option>Someone else</option></select></div>
+            <div class="field"><label for="dentist">Dentist</label><select id="dentist" name="dentist"><option>Any dentist</option></select></div>
+            <div class="field full"><label for="service">Treatment or concern</label><select id="service" name="service" required><option value="">Choose one</option></select></div>
+            <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+            <div class="field"><label for="time">Time</label><select id="time" name="time" required><option value="">Choose a time</option></select></div>
+            <div class="field full check"><input id="nervous" name="nervous" type="checkbox" value="yes"><label for="nervous">I'm nervous about dental visits. Please book the gentle-care slot.</label></div>
+            <div class="field full"><label for="notes">Anything we should know</label><textarea id="notes" name="notes" placeholder="Pain, medical conditions, medication, pregnancy, insurance panel, or what you'd like to change about your smile"></textarea></div>
+          </div>
+          <div class="form-actions">
+            <button class="button button-ink" type="submit">Send on WhatsApp</button>
+            <button class="button button-soft" type="button" id="copyMessage">Copy message</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">Visit</p>
+          <h2>A quiet corner <em>of Kampung Pandan.</em></h2>
+          <address>Dental Clinic, Kampung Pandan<br>55100 Kuala Lumpur</address>
+          <dl class="hours">
+            <div><dt>Mon – Fri</dt><dd>9:00 AM – 6:00 PM</dd></div>
+            <div><dt>Saturday</dt><dd>9:00 AM – 4:00 PM</dd></div>
+            <div><dt>Sunday</dt><dd>Closed · emergencies by WhatsApp</dd></div>
+          </dl>
+          <p class="open-now" id="openNow"></p>
+          <p class="visit-note">Lift access, pram-friendly, four reserved bays at the entrance, prayer room on the same floor.</p>
+          <div class="hero-actions">
+            <a class="button button-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=3.144827966176431%2C101.74171596840188" target="_blank" rel="noopener">Directions</a>
+            <a class="button button-soft" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%27d%20like%20to%20ask%20about%20a%20visit." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="visit-map reveal"><iframe title="Map to Dental Clinic in Kampung Pandan, Kuala Lumpur" src="https://www.google.com/maps?q=3.144827966176431,101.74171596840188&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </section>
+
+    <!-- PITCH -->
+    <section class="pitch" id="for-clinic-owners" aria-labelledby="pitch-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">For the clinic owner · website by Niagova</p><h2 id="pitch-title">Your receptionist answers the same <em>three questions</em> fifty times a day.</h2></div>
+          <p class="lead">"How much for scaling?" "Do you take my panel?" "Got slot Saturday?" This website answers them while she is chairside, and sends her only what matters: a complete request to confirm.</p>
+        </div>
+        <div class="compare reveal">
+          <div class="compare-col before"><h3>Replying by hand</h3><ul><li>Fees sent as photos of a laminated card, out of date by the next price change.</li><li>"Got slot?" means opening the appointment book, replying, then chasing a patient who has gone quiet.</li><li>Nervous patients never message at all. They just do not come.</li><li>Toothache enquiries at 11 pm with no triage, no first aid, no slot.</li><li>Parents ask "is it scary for kids?" and get a one-line reply.</li></ul></div>
+          <div class="compare-col after"><h3>With this web system</h3><ul><li>Fee guide and panel list published once, edited in minutes.</li><li>Chair availability by dentist, 24 hours a day, flowing into a ready-written booking.</li><li>The comfort menu and the dentist's letter convert the patients who were too anxious to ask.</li><li>Toothache triage gives first aid and urgency, and queues a callback request.</li><li>The kids' first-visit story answers "is it scary?" with photos, not promises.</li></ul></div>
+        </div>
+        <div class="metrics reveal">
+          <div><strong data-count="3">0</strong><span>questions answered before the first message: fee, panel, slot</span></div>
+          <div><strong data-count="24" data-suffix="/7">0</strong><span>availability and triage while the clinic is closed</span></div>
+          <div><strong data-count="1">0</strong><span>yearly managed plan: hosting, fee edits, support</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<section class="niagova-band" aria-labelledby="niagova-title">
+  <div class="niagova-band-inner">
+    <div>
+      <img src="images/niagova-logo-on-dark.svg" alt="Niagova" width="150" height="36" loading="lazy">
+      <p class="niagova-band-kicker">This demo website is built by Niagova</p>
+      <h2 id="niagova-title">Want a website like this for your business?</h2>
+      <p class="niagova-band-copy">Websites, booking systems and business apps for Malaysian SMEs. Every package and price is on niagova.com.</p>
+    </div>
+    <a class="niagova-band-cta" href="https://niagova.com/#pricing" target="_blank" rel="noopener">View Niagova packages <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+  <footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Dental Clinic · Demo website by <a href="https://niagova.com/" target="_blank" rel="noopener">Niagova</a>.</span><span>Photos, fees, reviews and schedule are illustrative proposal content.</span></div></footer>
+
+  <div class="sticky-bar"><a href="#urgent">Toothache now?</a><a class="primary" href="#book">Book a visit</a></div>
+  <a class="wa-float" href="https://wa.me/601158121239?text=Hi%20Dental%20Clinic%2C%20I%27d%20like%20to%20ask%20about%20a%20visit." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.6 11.4 11.4 0 0 0 4.4 3.9c1.6.7 2.3.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="index.js?v=__BUILD_VERSION__" defer></script>
+</body>
+</html>
